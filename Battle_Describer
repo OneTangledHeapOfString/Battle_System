@@ -186,7 +186,7 @@ function has(list_of_buffs, buffs_to_check_for) {
 // Healing can be done by Skills or Items!
 // Toxify 'clouds' the upper part of the HP bar preventing recovery up to a certain %; 50% clouding at lv5. Nasty.
 // Can be programmed in a similar way as Preserve - if incoming healing would touch the cloud, cap it at the cloud
-// MaxHP of target is NOT AFFECTED
+// MaxHP of a target is not affected
 function Heal(User, Target, Skill) {
     if (has(User.BuffList, "Toxify")) {
         // Cut heal
